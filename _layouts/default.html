@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://chrstnb.github.io/html-resume/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="{{ "/assets/css/css" | absolute_url  }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url  }}">
+<!--     <script src="./chrstnb.github.io_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./chrstnb.github.io_files/resume.json"></script>
+    <script type="text/javascript" src="./chrstnb.github.io_files/script.js"></script>
+ -->
+  </head>
+  <body lang="en">
+    <section id="main">
+      <div id="head">
+        <div id="hLeft">
+          <h1 id="name">{{ site.name }}</h1>
+          <h2 id="title">{{ site.current_title }}</h2>
+        </div>
+        <div class="vertical"></div>
+        <span id="hRight">
+        <ul>
+          <li>{{ site.phone_number }}</li>
+          <li>{{ site.email_address }}</li>
+          <li><a href="https://{{ site.personal_website }}">{{ site.personal_website }}</a></li>
+          <li><a href="https://{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
+          <li><a href="https://{{ site.github_url }}">{{ site.github_url }}</a></li>
+        </ul>
+      </span>
+      </div>
+      <section class="bod">
+        <section class="main-block" id="work">
+          <h2>Experience</h2>
+          <hr>
+          {% for item in site.experience %}
+            {% if item.visible %}
+              <section class="blocks">
+                <div class="decorator"></div>
+                <div class="details">
+                  <span class="job">{{ item.title }}</span>
+                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{% if item.end_year %}{{ item.end_month }}.{{item.end_year}}{% endif %}</span><br>
+                  <span class="place">{{ item.name }}</span>
+                  <span class="location">{{ item.location }}</span>
+                  <span class="description">{{ item.content }}</span>
+                </div>
+              </section>
+            {% endif %}
+          {% endfor %}
+        </section>
+
+        <section class="main-block" id="education">
+          <h2>Volunteer Work</h2>
+          <hr>
+          {% for item in site.volunteer_work %}
+            {% if item.visible %}
+              <section class="blocks">
+                <div class="decorator"></div>
+                <div class="details">
+                  <span class="job">{{ item.job }}</span>
+                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
+                  <span class="place">{{ item.organization }}</span>
+                  <span class="location">{{ item.location }}</span>
+                </div>
+              </section>
+            {% endif %}
+          {% endfor %}
+        </section>
+
+        <section class="main-block" id="education">
+          <h2>Education</h2>
+          <hr>
+          {% for item in site.education %}
+            {% if item.visible %}
+              <section class="blocks">
+                <div class="decorator"></div>
+                <div class="details">
+                  <span class="job">{{ item.degree }}</span>
+                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
+                  <span class="date">{{ item.additional_info }}</span><br>
+                  <span class="place">{{ item.school }}</span>
+                  <span class="location">{{ item.location }}</span>
+                  {% if item.gpa %}
+                    <span class="gpa">gpa: {{ item.gpa }}</span>
+                  {% endif %}
+                  <span class="description">{{ item.content }}</span>
+                </div>
+              </section>
+            {% endif %}
+          {% endfor %}
+        </section>
+
+        <section class="main-block">
+          <h2>Publications</h2>
+          <hr>
+          <div class="details">
+            <ul id="publications">
+            {% for item in site.publications %}
+              {% if item.visible %}
+                  <li class="none">{{ item.title }} ({{ item.authors }}){% if item.venue %}; {{ item.venue }} {% endif %}</li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </div>
+        </section>
+    
+        <section class="main-block">
+          <h2>Skills</h2>
+          <hr>
+          <section class="blocks" id="skills">
+            <div class="details" id="skillBox">
+              <div class="skill">
+                <h3>Proficient</h3>
+                {{ site.skills[0] }}
+              </div>
+              <div class="skill">
+                <h3>Familiar</h3>
+                {{ site.skills[1] }}
+              </div>
+              <div class="skill">
+                <h3>Tools</h3>
+                {{ site.skills[2] }}
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="main-block">
+          <h2>Selected Awards &amp; Honors</h2>
+          <hr>
+          <div class="details">
+            <ul id="awards">
+              {{ site.awards[0] }}
+          </div>
+        </section>
+
+    </section>
+    </section>
+  
+
+</body></html>

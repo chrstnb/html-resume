@@ -1,0 +1,22 @@
+title: Minimal theme
+logo: /assets/img/logo.png
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+name: Christine Betts
+current_title: Research Engineer
+phone_number: (913) 909-2180
+email_address: chrstn@cs.washington.edu
+personal_website: christinebetts.com
+linkedin_url: linkedin.com/in/bettschristine
+github_url: github.com/chrstnb
+
+collections_dir: resume_content
+
+collections:
+  - experience
+  - publications
+  - awards
+  - education
+  - volunteer_work
+  - skills
