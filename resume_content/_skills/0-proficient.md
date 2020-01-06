@@ -6,6 +6,5 @@ visible: true
 - React
 - GraphQL
 - JavaScript
-- jQuery
 - HTML/CSS
 - Python

@@ -1,10 +1,9 @@
 ---
 visible: true
 ---
-- CUSP Rich Context Competition: 1st place (w/ AI2 team)
-- Allen Institute for Artificial Intelligence: Outstanding Software Engineer Scholarship/Award
+- [CUSP Rich Context Competition](https://coleridgeinitiative.org/richcontextcompetition): 1st place (w/ AI2 team)
+- [Allen Institute for Artificial Intelligence: Outstanding Software Engineer Scholarship/Award](https://www.geekwire.com/2018/christine-betts/)
 - Allen School Undergraduate Research Poster Fair: 3rd place
-- 2017-2018 TUNE Scholar
-- Dreama Frost Scholarship
-- Missouri State Women in Legislature Scholarship
-- Rotary Youth Leadership Award
+- [2017-2019 TUNE Scholar](https://www.tune.com/blog/2018-2019-tune-house-scholars/)
+- [Dreama Frost Scholarship](https://www.cs.washington.edu/students/ugrad/departmental/dreama)
+- [Missouri State Women in Legislature Scholarship](https://themissouritimes.com/57759/women-legislators-of-missouri-raise-10k-for-scholarships/)
