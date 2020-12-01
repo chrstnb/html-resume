@@ -8,4 +8,3 @@ title: teaching assistant
 name: paul g. allen school
 location: seattle, wa
 ---
-Assisted with second in intro programming series.

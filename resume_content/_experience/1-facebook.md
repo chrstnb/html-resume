@@ -8,4 +8,6 @@ title: software engineer intern
 name: facebook
 location: New York, NY
 ---
-Developed tooling around biases in human review processes.
+
+- Designed and implemented tooling providing insights on human review processes.
+- Worked with React, GraphQL, Hack.

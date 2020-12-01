@@ -8,4 +8,5 @@ title: research assistant
 name: molecular information systems lab
 location: seattle, wa
 ---
-Contributed to an open source operating system for a microfluidics lab-on-a-chip; part of DNA data storage research.
+- Built a simulator for microfluidics lab-on-a-chip programs.
+- Worked with Rust, Python, Phaser.

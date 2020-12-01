@@ -9,4 +9,4 @@ degree: B.S. Computer Science
 additional_info: Departmental Honors
 visible: true
 ---
-Peer adviser, exploration session instructor, member of provost's advisory council.
+- Peer adviser, exploration session instructor, member of provost's advisory council.

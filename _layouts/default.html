@@ -15,20 +15,26 @@
           <h1 id="name">{{ site.name }}</h1>
           <h2 id="title">{{ site.current_title }}</h2>
         </div>
-        <div class="vertical"></div>
-        <span id="hRight">
+<!--         <div class="vertical"></div>
+ -->        <span id="hRight">
+  <br>
         <ul>
           <li>{{ site.phone_number }}</li>
           <li>{{ site.email_address }}</li>
-          <li><a href="https://{{ site.personal_website }}">{{ site.personal_website }}</a></li>
-          <li><a href="https://{{ site.github_url }}">{{ site.github_url }}</a></li>
-        </ul>
+          <li><a class="header" href="https://christinebetts.com" target="_blank">christinebetts.com</a></li>
+<!--           <li><a href="https://{{ site.personal_website }}">{{ site.personal_website }}</a></li>
+ --><!--           <li><a href="https://{{ site.github_url }}">{{ site.github_url }}</a></li>
+ -->        </ul>
       </span>
       </div>
-      <section class="bod">
+      <section class="bod2">
         <section class="main-block" id="work">
           <h2>Experience</h2>
           <hr>
+        </section>
+      </section>
+
+      <section class="bod">
           {% for item in site.experience %}
             {% if item.visible %}
               <section class="blocks">
@@ -43,29 +49,11 @@
               </section>
             {% endif %}
           {% endfor %}
-        </section>
-
-        <section class="main-block" id="education">
-          <h2>Volunteer Work</h2>
-          <hr>
-          {% for item in site.volunteer_work %}
-            {% if item.visible %}
-              <section class="blocks">
-                <div class="decorator"></div>
-                <div class="details">
-                  <span class="job">{{ item.job }}</span>
-                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
-                  <span class="place">{{ item.organization }}</span>
-                  <span class="location">{{ item.location }}</span>
-                </div>
-              </section>
-            {% endif %}
-          {% endfor %}
-        </section>
 
         <section class="main-block" id="education">
           <h2>Education</h2>
           <hr>
+        </section>
           {% for item in site.education %}
             {% if item.visible %}
               <section class="blocks">
@@ -84,23 +72,26 @@
               </section>
             {% endif %}
           {% endfor %}
-        </section>
 
         <section class="main-block">
-          <h2>Publications</h2>
+          <h2>Publications &amp; Talks</h2>
           <hr>
+          </section>
+          <section class="blocks">
           <div class="details">
+            <span class="description">
             <ul id="publications">
             {% for item in site.publications %}
               {% if item.visible %}
-                  <li class="none">{{ item.title }} ({{ item.authors }}){% if item.venue %}; {{ item.venue }} {% endif %}</li>
+                  <li class="none"> {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}{% if item.authors %} ({{ item.authors }}){%endif%}{% if item.venue %}; {{ item.venue }} {% endif %}</li>
               {% endif %}
             {% endfor %}
             </ul>
+          </span>
           </div>
         </section>
     
-        <section class="main-block">
+<!--         <section class="main-block">
           <h2>Skills</h2>
           <hr>
           <section class="blocks" id="skills">
@@ -120,15 +111,40 @@
             </div>
           </section>
         </section>
-
+ -->
         <section class="main-block">
           <h2>Selected Awards &amp; Honors</h2>
           <hr>
+          </section>
+          <section class="blocks">
           <div class="details">
+            <span class="description">
             <ul id="awards">
               {{ site.awards[0] }}
+            </ul>
+          </span>
           </div>
         </section>
+
+                <section class="main-block" id="education">
+          <h2>Volunteer Work</h2>
+          <hr>
+        </section>
+          {% for item in site.volunteer_work %}
+            {% if item.visible %}
+              <section class="blocks">
+                <div class="decorator"></div>
+                <div class="details">
+                  <span class="job">{{ item.job }}</span>
+                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
+                  <span class="place">{{ item.organization }}</span>
+                  <span class="location">{{ item.location }}</span>
+                </div>
+              </section>
+            {% endif %}
+          {% endfor %}
+        
+
 
     </section>
     </section>

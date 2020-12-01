@@ -13,10 +13,15 @@ html {
   box-sizing: border-box;
 }
 
+.decorator {
+  visibility: hidden !important;
+}
+
+
 :root{
   --gray: #ccc;
   --page-width: 8.5in;
-  --page-height: 11in;
+  --page-height: 10.5in;
   --main-width: 8in;
   --decorator-horizontal-margin: 0.15in;
   --bod-width: 8in;
@@ -31,6 +36,10 @@ html {
   --row-blocks-padding-top: 7pt;
 
   --main-blocks-title-icon-offset-left: -10pt;
+}
+
+#title {
+  font-weight:normal;
 }
 
 body {
@@ -51,33 +60,39 @@ ul {
   margin:0px;
   padding:0px;
 }
-li{
+/*li{
   list-style-type: none;
 }
-
+*/
 a {
-	text-decoration: none;
-	color: black;
+/*	text-decoration: none;
+*/	color: black;
+}
+
+a.header {
+  text-decoration: none
 }
 
 #main{
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  font-size: 12pt;
 }
 
 #head {
-  display: flex;
+/*  display: flex;
   justify-content: center;
   align-items:center;
   align-content:center;
+
   height: var(--head-height);
-  padding: 30px;
+*/  padding: 0px;
 }
+
 #head h1 {
   font-weight: 300;
-  font-size: 18pt;
+  font-size: 16pt;
   line-height: 1.5;
 }
 
@@ -86,21 +101,24 @@ a {
 }
 
 #hLeft {
-  order: 1;
+  text-align:right;
   text-transform: uppercase;
-  text-align: right;
-  margin:12px;
-  font-family: 'Asap', sans-serif;
+ font-family: 'Asap', sans-serif;
   letter-spacing: 1.5px;
 
 
 }
 
+#hRight > ul > li{
+  list-style-type: none;
+}
+
+
 #hRight {
   order: 3;
   text-transform: lowercase;
-  text-align:left;
-  margin:12px;
+  text-align:right;
+  margin-right:0px;
   font-size:12px;
   line-height: 19px;
 }
@@ -123,9 +141,30 @@ a {
   width:calc(var(--main-width) - 20);
 }
 
+.bod2 {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  width:calc(var(--main-width) - 20);
+}
+.bod2 h2 {
+  text-transform: uppercase;
+  font-size:12pt;
+  font-weight: normal;
+}
+
+.bod2 > .main-block {
+  padding-top:5px;
+}
+
+hr {
+  width: calc(var(--main-width) / 2.4);
+}
+
 .bod h2 {
   text-transform: uppercase;
   font-size:12pt;
+  font-weight: normal;
 }
 
 .main-block {
@@ -136,10 +175,19 @@ a {
   padding-right:.3in;
 }
 
+
+.blocks {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  padding-right:.3in;
+}
+
+
 .job, .date {
   text-transform:uppercase;
   font-size: 11px;
-  font-weight:bolder;
+  font-weight:bold;
   line-height:20px;
   font-family: 'Asap', sans-serif;
   letter-spacing: 1.5px;
@@ -153,9 +201,8 @@ a {
   text-transform:uppercase;
   font-style:italic;
   font-size:12px;
-  line-height: 20px
+  line-height: 20px;
 }
-
 .decorator {
   position: relative;
   width: 2pt;
@@ -166,15 +213,28 @@ a {
 
 }
 
-.blocks:last-child .decorator{
+/*.blocks:last-child .decorator{
   margin-bottom: 0in;
+}
+*/
+
+.main-block + .blocks {
+  padding-top: 0px;
+}
+
+.bod2 + .bod {
+  padding-top: 0px;
 }
 
 .blocks {
   display: flex;
   width: calc(var(--main-width) / 2.1);
+  padding-bottom:.1in;
 }
 
+#pagebrk {
+  height:45px;
+}
 .blocks > div { 
   padding-top: var(--row-blocks-padding-top);
 }
@@ -205,10 +265,15 @@ a {
 
 .details {
   width: calc((var(--main-width)/2) - (var(--decorator-horizontal-margin) * 3));
-  flex: 1 0 0;
-  padding-left: var(--decorator-horizontal-margin);
-  padding-top: calc(var(--row-blocks-padding-top)) !important;
+/*  flex: 1 0 0;
+*//*  padding-left: var(--decorator-horizontal-margin);
+*/  padding-top: calc(var(--row-blocks-padding-top)) !important;
 }
+
+.description > ul {
+  padding-left: var(--decorator-horizontal-margin);
+}
+
 
 .description > p {
 	margin: inherit;
@@ -216,6 +281,11 @@ a {
 
 #skillBox {
   display: flex;
+}
+
+.bod > li {
+    list-style-type: circle;  
+
 }
 
 .skill {
@@ -229,7 +299,7 @@ a {
 }
 
 #awards li, #publications li {
-    list-style-type: circle;  
+    list-style-type: disc;  
 }
 
 .grad, .gpa {
@@ -258,11 +328,22 @@ a {
   font-style:italic;
   padding-bottom:4px;
 }
-
+/*
 hr { 
-  border-top: 1px solid var(--gray);
+  border-top: 0px solid var(--gray);
   margin-right:10%;
   margin-left:0;
   width:329.13;
+  background: var(--gray);
+  height:2px;
 
 }
+*/
+hr { display: block; height: 2px;
+    border: 0; border-top: 2px solid var(--gray);
+    margin-right:10%;
+  margin-left:0; padding: 0; 
+  margin-bottom: 0px;
+
+}
+

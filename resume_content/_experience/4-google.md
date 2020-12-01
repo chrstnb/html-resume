@@ -8,4 +8,3 @@ title: eng. practicum intern
 name: google
 location: mountain view, ca
 ---
-Added a feature to AdWords Scripts.
