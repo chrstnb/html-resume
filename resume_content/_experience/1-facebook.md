@@ -7,6 +7,7 @@ end_year: 2018
 title: software engineer intern
 name: facebook
 location: New York, NY
+visible: false
 ---
 
 - Designed and implemented tooling providing insights on human review processes.

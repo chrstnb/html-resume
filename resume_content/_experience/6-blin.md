@@ -7,4 +7,5 @@ end_year: 2016
 title: internal systems manager
 name: b.lin catering
 location: washington, dc
+visible: false
 ---

@@ -7,4 +7,5 @@ end_year: 2016
 title: congressional intern
 name: us house of representatives
 location: washington, dc
+visible: false
 ---

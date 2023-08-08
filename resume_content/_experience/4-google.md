@@ -7,4 +7,5 @@ end_year: 2017
 title: eng. practicum intern
 name: google
 location: mountain view, ca
+visible: false
 ---

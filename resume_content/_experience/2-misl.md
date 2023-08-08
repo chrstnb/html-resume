@@ -7,6 +7,7 @@ end_year: 2018
 title: research assistant
 name: molecular information systems lab
 location: seattle, wa
+visible: false
 ---
 - Built a simulator for microfluidics lab-on-a-chip programs.
 - Worked with Rust, Python, Phaser.
