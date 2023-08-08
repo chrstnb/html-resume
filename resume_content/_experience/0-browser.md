@@ -2,6 +2,8 @@
 visible: true
 start_month: "08"
 start_year: 2021
+end_month: "06"
+end_year: 2023
 title: software engineer
 name: the browser company
 location: new york, ny
