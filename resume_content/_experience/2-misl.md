@@ -1,6 +1,6 @@
 ---
 visible: true
-start_month: 12
+start_month: "December"
 start_year: 2017
 end_month: "06"
 end_year: 2018

@@ -1,10 +1,10 @@
 ---
 visible: true
-start_month: "08"
+start_month: "August"
 start_year: 2019
-end_month: "04"
+end_month: "April"
 end_year: 2021
-title: software engineer
+title: software engineer II
 name: google research
 location: Mountain View, California
 ---

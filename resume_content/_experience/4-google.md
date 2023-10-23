@@ -1,11 +1,11 @@
 ---
 visible: true
-start_month: "06"
+start_month: "June"
 start_year: 2017
-end_month: "09"
+end_month: "September"
 end_year: 2017
 title: eng. practicum intern
 name: google
-location: mountain view, ca
-visible: false
+location: mountain view, CA
+visible: true
 ---

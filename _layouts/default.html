@@ -3,6 +3,8 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="{{ "/assets/css/css" | absolute_url  }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url  }}">
+    <link href="https://fonts.googleapis.com/css2?family=jost&display=swap" rel="stylesheet">
+
 <!--     <script src="./chrstnb.github.io_files/jquery.min.js"></script>
     <script type="text/javascript" src="./chrstnb.github.io_files/resume.json"></script>
     <script type="text/javascript" src="./chrstnb.github.io_files/script.js"></script>
@@ -40,10 +42,10 @@
               <section class="blocks">
                 <div class="decorator"></div>
                 <div class="details">
-                  <span class="job">{{ item.title }}</span>
-                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{% if item.end_year %}{{ item.end_month }}.{{item.end_year}}{% endif %}</span><br>
-                  <span class="place">{{ item.name }}</span>
-                  <span class="location">{{ item.location }}</span>
+                  <span class="job">{{ item.title }}</span><br>
+                  <span class="place">{{ item.name }}</span><br>
+                  <span class="location">{{ item.location }} |</span>
+                  <span class="date">{{ item.start_month }} {{item.start_year}}-{% if item.end_month != '' %}{{ item.end_month }} {{item.end_year}}{% endif %}</span>
                   <span class="description">{{ item.content }}</span>
                 </div>
               </section>
@@ -59,15 +61,9 @@
               <section class="blocks">
                 <div class="decorator"></div>
                 <div class="details">
-                  <span class="job">{{ item.degree }}</span>
-                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
-                  <span class="date">{{ item.additional_info }}</span><br>
-                  <span class="place">{{ item.school }}</span>
-                  <span class="location">{{ item.location }}</span>
-                  {% if item.gpa %}
-                    <span class="gpa">gpa: {{ item.gpa }}</span>
-                  {% endif %}
-                  <span class="description">{{ item.content }}</span>
+                  <span class="job">{{ item.degree }}</span> <span class="date">{{ item.additional_info }}</span><br>
+                  <span class="place">{{ item.school }}</span><br>
+                  <span class="date">{{item.start_year}}-{{item.end_year}}</span><br>
                 </div>
               </section>
             {% endif %}
@@ -136,7 +132,7 @@
                 <div class="decorator"></div>
                 <div class="details">
                   <span class="job">{{ item.job }}</span>
-                  <span class="date">{{ item.start_month }}.{{item.start_year}}-{{ item.end_month }}.{{item.end_year}}</span><br>
+                  <span class="date">{{item.start_year}}-{% if item.unfinished != true %}{{item.end_year}}{% endif %}</span><br>
                   <span class="place">{{ item.organization }}</span>
                   <span class="location">{{ item.location }}</span>
                 </div>

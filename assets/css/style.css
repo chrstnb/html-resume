@@ -46,7 +46,8 @@ body {
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+        font-family: 'Jost', sans-serif;
+
   line-height: 1;
   color: #000;
   hyphens: auto;
@@ -59,6 +60,7 @@ h1, h2, h3{
 ul {
   margin:0px;
   padding:0px;
+
 }
 /*li{
   list-style-type: none;
@@ -102,8 +104,8 @@ a.header {
 
 #hLeft {
   text-align:right;
-  text-transform: uppercase;
- font-family: 'Asap', sans-serif;
+  text-transform: capitalize;
+ font-family: 'Jost', sans-serif;
   letter-spacing: 1.5px;
 
 
@@ -148,7 +150,7 @@ a.header {
   width:calc(var(--main-width) - 20);
 }
 .bod2 h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size:12pt;
   font-weight: normal;
 }
@@ -162,7 +164,7 @@ hr {
 }
 
 .bod h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size:12pt;
   font-weight: normal;
 }
@@ -185,23 +187,26 @@ hr {
 
 
 .job, .date {
-  text-transform:uppercase;
-  font-size: 11px;
-  font-weight:bold;
+  text-transform:capitalize;
+  font-size: 12px;
   line-height:20px;
-  font-family: 'Asap', sans-serif;
-  letter-spacing: 1.5px;
 }
 
-.place:after, .job:after {
-  content:' | ';
+.date, .location {
+  color: gray;
+
 }
+
+/*.location:after {
+  content:' | ';
+}*/
 
 .place, .location {
-  text-transform:uppercase;
-  font-style:italic;
+  text-transform:capitalize;
+/*  font-style:italic;*/
   font-size:12px;
   line-height: 20px;
+/*  color: #4f5451;*/
 }
 .decorator {
   position: relative;
@@ -303,7 +308,7 @@ hr {
 }
 
 .grad, .gpa {
-  text-transform:uppercase;
+  text-transform:capitalize;
   font-size: 12px;
   font-weight:bolder;
   line-height:20px;
@@ -324,7 +329,7 @@ hr {
 .skill h3 {
   font-size:15px;
   font-weight:bolder;
-  text-transform:uppercase;
+  text-transform:capitalize;
   font-style:italic;
   padding-bottom:4px;
 }
@@ -339,8 +344,8 @@ hr {
 
 }
 */
-hr { display: block; height: 2px;
-    border: 0; border-top: 2px solid var(--gray);
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid var(--gray);
     margin-right:10%;
   margin-left:0; padding: 0; 
   margin-bottom: 0px;
