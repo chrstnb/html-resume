@@ -41,12 +41,16 @@ html {
 #title {
   font-weight:normal;
 }
+ 
+p {
+  margin: inherit;
+}
 
 body {
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-        font-family: 'Jost', sans-serif;
+        font-family: 'Mulish', sans-serif;
 
   line-height: 1;
   color: #000;
@@ -72,7 +76,7 @@ a {
 }
 
 a.header {
-  text-decoration: none
+/*  text-decoration: none*/
 }
 
 #main{
@@ -103,7 +107,7 @@ a.header {
 }
 
 #hLeft {
-  text-align:right;
+  text-align:center;
   text-transform: capitalize;
  font-family: 'Jost', sans-serif;
   letter-spacing: 1.5px;
@@ -119,8 +123,8 @@ a.header {
 #hRight {
   order: 3;
   text-transform: lowercase;
-  text-align:right;
-  margin-right:0px;
+  text-align:center;
+/*  margin-right:0px;*/
   font-size:12px;
   line-height: 19px;
 }
@@ -160,7 +164,7 @@ a.header {
 }
 
 hr {
-  width: calc(var(--main-width) / 2.4);
+  width: calc(var(--main-width) / 4);
 }
 
 .bod h2 {
@@ -192,6 +196,18 @@ hr {
   line-height:20px;
 }
 
+.job {
+    font-size: 13px;
+}
+
+.place {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 12px;
+}
 .date, .location {
   color: gray;
 
@@ -204,7 +220,7 @@ hr {
 .place, .location {
   text-transform:capitalize;
 /*  font-style:italic;*/
-  font-size:12px;
+/*  font-size:12px;*/
   line-height: 20px;
 /*  color: #4f5451;*/
 }
@@ -269,7 +285,7 @@ hr {
 }
 
 .details {
-  width: calc((var(--main-width)/2) - (var(--decorator-horizontal-margin) * 3));
+  width: calc((var(--main-width)) - (var(--decorator-horizontal-margin) * 3));
 /*  flex: 1 0 0;
 *//*  padding-left: var(--decorator-horizontal-margin);
 */  padding-top: calc(var(--row-blocks-padding-top)) !important;
@@ -288,8 +304,8 @@ hr {
   display: flex;
 }
 
-.bod > li {
-    list-style-type: circle;  
+.description li {
+    list-style-type: "-  ";  
 
 }
 
@@ -301,8 +317,14 @@ hr {
 .description, li {
   font-size:9.5pt;
   line-height:20px;
+  font-family: sans-serif;
 }
 
+/*li:before {
+    content: "";
+    margin-left: -2px;
+}
+*/
 #awards li, #publications li {
     list-style-type: disc;  
 }

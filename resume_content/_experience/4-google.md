@@ -6,6 +6,6 @@ end_month: "September"
 end_year: 2017
 title: eng. practicum intern
 name: google
-location: mountain view, CA
+location: mountain view, California
 visible: true
 ---

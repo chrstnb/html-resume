@@ -3,8 +3,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="{{ "/assets/css/css" | absolute_url  }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url  }}">
-    <link href="https://fonts.googleapis.com/css2?family=jost&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 <!--     <script src="./chrstnb.github.io_files/jquery.min.js"></script>
     <script type="text/javascript" src="./chrstnb.github.io_files/resume.json"></script>
     <script type="text/javascript" src="./chrstnb.github.io_files/script.js"></script>
@@ -15,20 +14,14 @@
       <div id="head">
         <div id="hLeft">
           <h1 id="name">{{ site.name }}</h1>
-          <h2 id="title">{{ site.current_title }}</h2>
+          <!-- <h2 id="title">{{ site.current_title }}</h2> -->
         </div>
 <!--         <div class="vertical"></div>
  -->        <span id="hRight">
-  <br>
-        <ul>
-          <li>{{ site.phone_number }}</li>
-          <li>{{ site.email_address }}</li>
-          <li><a class="header" href="https://christinebetts.com" target="_blank">christinebetts.com</a></li>
-<!--           <li><a href="https://{{ site.personal_website }}">{{ site.personal_website }}</a></li>
- --><!--           <li><a href="https://{{ site.github_url }}">{{ site.github_url }}</a></li>
- -->        </ul>
+  <p>me@<a class="header" href="https://christinebetts.com" target="_blank">christinebetts.com</a></p>
       </span>
       </div>
+      <br>
       <section class="bod2">
         <section class="main-block" id="work">
           <h2>Experience</h2>
@@ -63,13 +56,13 @@
                 <div class="details">
                   <span class="job">{{ item.degree }}</span> <span class="date">{{ item.additional_info }}</span><br>
                   <span class="place">{{ item.school }}</span><br>
-                  <span class="date">{{item.start_year}}-{{item.end_year}}</span><br>
+                  <!-- <span class="date">{{item.start_year}}-{{item.end_year}}</span><br> -->
                 </div>
               </section>
             {% endif %}
           {% endfor %}
 
-        <section class="main-block">
+<!--         <section class="main-block">
           <h2>Publications &amp; Talks</h2>
           <hr>
           </section>
@@ -86,7 +79,7 @@
           </span>
           </div>
         </section>
-    
+     -->
 <!--         <section class="main-block">
           <h2>Skills</h2>
           <hr>
@@ -108,7 +101,7 @@
           </section>
         </section>
  -->
-        <section class="main-block">
+<!--         <section class="main-block">
           <h2>Selected Awards &amp; Honors</h2>
           <hr>
           </section>
@@ -121,8 +114,8 @@
           </span>
           </div>
         </section>
-
-                <section class="main-block" id="education">
+ -->
+<!--                 <section class="main-block">
           <h2>Volunteer Work</h2>
           <hr>
         </section>
@@ -132,7 +125,7 @@
                 <div class="decorator"></div>
                 <div class="details">
                   <span class="job">{{ item.job }}</span>
-                  <span class="date">{{item.start_year}}-{% if item.unfinished != true %}{{item.end_year}}{% endif %}</span><br>
+                  <span class="date">{{item.start_year}}-{% if item.unfinished != true %}{{item.end_year}}{% endif %}</span>
                   <span class="place">{{ item.organization }}</span>
                   <span class="location">{{ item.location }}</span>
                 </div>
@@ -142,7 +135,7 @@
         
 
 
-    </section>
+    </section> -->
     </section>
   
 

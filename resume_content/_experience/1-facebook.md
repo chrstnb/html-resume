@@ -6,9 +6,9 @@ end_month: "September"
 end_year: 2018
 title: software engineer intern
 name: facebook
-location: New York, NY
+location: New York, New York
 visible: true
 ---
-<!-- 
+
 - Designed and implemented tooling providing insights on human review processes.
-- Worked with React, GraphQL, Hack. -->
+- Worked in React, GraphQL, Hack.
