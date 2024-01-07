@@ -4,7 +4,7 @@ start_month: "August"
 start_year: 2021
 end_month: "June"
 end_year: 2023
-title: senior software engineer
+title: software engineer
 name: the browser company
 location: new york, New York
 ---
