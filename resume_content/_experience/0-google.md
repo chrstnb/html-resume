@@ -4,7 +4,7 @@ start_month: "August"
 start_year: 2019
 end_month: "April"
 end_year: 2021
-title: software engineer III
+title: software engineer
 name: google research
 location: Mountain View, California
 ---
